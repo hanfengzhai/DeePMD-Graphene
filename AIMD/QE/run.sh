@@ -9,5 +9,11 @@
 #SBATCH --mail-user=hz253@cornell.edu
 
 
+module load cpu/0.15.4
+module load gcc/9.2.0
+module load openmpi/3.1.6
+module load quantum-espresso/6.7.0-openblas
+
+
 cp.x < graphene.gs.in > graphene.gs.out
 cp.x < graphene.in > graphene
